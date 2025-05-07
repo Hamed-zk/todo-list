@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-img"></div>
+    <main>
+        <div class="header">
+            <h1>TODO</h1>
+            <div onclick="changeTheme()" class="tgl-btn"></div>
+        </div>
+        <div class="type-todo">
+            <div class="circle"></div>
+            <input type="text" name="" id="todo-input">
+        </div>
+        <div class="todos"></div>
+        <div class="remarks">
+            <div class="completedCount"></div>
+            <div onclick="clearCompleted()">Clear Completed</div>
+            <div class="filters">
+                <div class="filterActive" onclick="showAll()">All</div>
+                <div onclick="filterActive()">Active</div>
+                <div onclick="filterCompleted()">Completed</div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
